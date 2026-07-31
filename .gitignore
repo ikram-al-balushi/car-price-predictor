@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+*.xlsx
+*.pkl
+dropout_data.csv
+dropout22_clean.csv
+students_data.csv
