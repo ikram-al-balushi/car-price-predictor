@@ -1,13 +1,14 @@
 from flask import Flask, render_template, request, jsonify
 import pandas as pd
 from sklearn import linear_model
+import os
 
 app = Flask(__name__)
 
 
 # DATA LOADING
 
-df = pd.read_csv("C:\\Users\\pc\\Desktop\\python, sir zfar iqbal\\simple_linearRegression\\data\\pakistan_used_cars.csv")
+df = pd.read_csv(os.path.join(os.path.dirname(__file__), "data", "pakistan_used_cars.csv"))
 
 print("Data loaded successfully")
 
